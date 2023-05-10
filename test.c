@@ -55,4 +55,5 @@ int main()
 	/*reg int a;
 	printf("%s\n", STR);*/
 	return 0;
+
 }
