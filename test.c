@@ -145,3 +145,23 @@ int main()
 	printf("%d\n", max);*/
 	return 0;
 }
+
+#define MALLOC(num,type) (type*)malloc(num*sizeof(type))
+
+//int main()
+//{
+//	int* p = MALLOC(10, int);
+//	return 0;
+//}
+
+
+#define MAX 100
+ 
+int main()
+{
+	printf("%d\n", MAX);
+#undef MAX
+
+	printf("%d\n", MAX);//此时MAX已经不能用了，因为undef解除了这个宏定义
+	return 0;
+}
